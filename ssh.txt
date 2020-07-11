@@ -1,0 +1,9 @@
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+clip < ~/.ssh/id_rsa.pub
+
+Now select SSH and GPG on the left hand side.
+
+Select “Add New SSH” and paste your code into the large text field.
+
